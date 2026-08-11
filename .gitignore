@@ -11,4 +11,5 @@ results/*
 !config/cell_types.csv
 .ipynb_checkpoints/
 __pycache__/
+*.baiduyun.uploading.cfg
 .DS_Store

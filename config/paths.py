@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 
 P38_PROJECT_ROOT = Path(os.getenv("P38_PROJECT_ROOT", "/data3/Group8/gonglihao/项目/p38"))
-P38_LEGACY_ROOT = Path(os.getenv("P38_LEGACY_ROOT", "/data3/Group8/gonglihao"))
+P38_LEGACY_ROOT = Path(os.getenv("P38_LEGACY_ROOT", "/data3/Group8/gonglihao/项目/p38"))
 P38_OUTPUT_ROOT = Path(os.getenv("P38_OUTPUT_ROOT", str(P38_LEGACY_ROOT / "p38_publication_outputs")))
 P38_THREADS = int(os.getenv("NSLOTS", os.getenv("P38_THREADS", "4")))
 RANDOM_SEED = int(os.getenv("P38_RANDOM_SEED", "1234"))

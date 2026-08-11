@@ -20,3 +20,5 @@ The mapping was checked against the composite figure supplied with the source co
 | Fig. S3E | `notebooks/14_fig_s3e_dynamics_metrics.ipynb` | 3 | Six dynamical-metric comparisons |
 
 > Some manuscript panels were assembled from multiple notebook outputs. The embedded outputs are visual references; rerun from the top after setting paths to regenerate them.
+
+`notebooks/16_figure2_4_exports.ipynb` is the later server-side export notebook for the UMAP, dot plot, proportions, volcano, and Nedd4 feature files used across Figures 2 and 4. It complements the analysis-level cells listed above. `notebooks/22_tcf4_velocity_feature.ipynb` contains the later Tcf4 velocity-feature export.

@@ -1,5 +1,5 @@
 p38_project_root <- Sys.getenv("P38_PROJECT_ROOT", "/data3/Group8/gonglihao/项目/p38")
-p38_legacy_root <- Sys.getenv("P38_LEGACY_ROOT", "/data3/Group8/gonglihao")
+p38_legacy_root <- Sys.getenv("P38_LEGACY_ROOT", "/data3/Group8/gonglihao/项目/p38")
 p38_output_root <- Sys.getenv("P38_OUTPUT_ROOT", file.path(p38_legacy_root, "p38_publication_outputs"))
 p38_workers <- as.integer(Sys.getenv("NSLOTS", Sys.getenv("P38_WORKERS", "4")))
 if (is.na(p38_workers) || p38_workers < 1L) p38_workers <- 1L
