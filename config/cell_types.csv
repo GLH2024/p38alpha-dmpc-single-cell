@@ -1,0 +1,16 @@
+cluster,celltype,color
+0,0 Mzb1+ pDC,#005F73
+1,1 Iglc3+ pDC,#56CFE1
+2,2 DC progenitor,#BDE038
+3,3 Gran progenitor,#F94144
+4,4 CD115+ CDP,#43AA8B
+5,5 GMP,#F9C74F
+6,6 MPP,#78290F
+7,7 CD115- CDP,#8E24AA
+8,8 CD34+ Kit+ CMP,#F28C28
+9,9 pre-cDC1,#C77DFF
+10,10 Mon progenitor,#F781BF
+11,11 pre-cDC2,#F08080
+12,12 pre-pDC,#4EA8DE
+13,13 CLP,#90BE6D
+14,14 pDC-biased progenitor,#A0E7E5

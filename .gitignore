@@ -1,0 +1,14 @@
+data/*
+!data/README.md
+results/*
+!results/.gitkeep
+*.rds
+*.h5ad
+*.loom
+*.mtx
+*.xlsx
+*.csv
+!config/cell_types.csv
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store

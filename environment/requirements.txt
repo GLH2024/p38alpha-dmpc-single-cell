@@ -1,0 +1,12 @@
+anndata
+dynamo-release
+ipykernel
+ipython
+jupyterlab
+matplotlib
+numpy
+pandas
+scipy
+seaborn
+statsmodels
+
