@@ -1,14 +1,9 @@
-# Validation summary
+# Validation records
 
-Validation performed during curation:
+- `notebook_manifest.tsv`: notebook language, cell counts, embedded-image counts and SHA-256.
+- `embedded_images.tsv`: every embedded image's notebook, cell, MIME type, byte size and SHA-256.
+- `INPUT_AUDIT.md`: retained server intermediates and missing legacy raw-input paths.
 
-- 29 notebooks parsed as valid notebook JSON.
-- 200 R code cells parsed successfully with R 4.5.3.
-- All Python code cells parsed successfully with Python AST.
-- All 29 notebooks load the central configuration before analysis code.
-- No hard-coded `/data3/Group8/gonglihao/` literal remains in notebook cells.
-- 132 embedded images decoded successfully. All 93 original local images and all 39 newly retained remote images are SHA-256-identical to their source-notebook images.
-- Original cell order is retained through per-cell provenance metadata. Removed cells were empty, exact duplicates, short fragments already present in an earlier complete cell, or superseded palette trials.
-- Remote audit covered 52 notebooks under the 85 GB server project tree; exact copies, parameter-only copies, and superseded exploratory versions are documented in `REMOTE_AUDIT.md`.
+Regenerate the first two files with `python tools/validate_notebooks.py` after any notebook edit.
 
-This is a static and structural validation. A complete numerical rerun requires the server-side `.rds`, `.h5ad`, Cell Ranger matrices, and package environments documented in the repository.
+The reconstructed Figure 4B analysis script was run under R environment `42` as SGE job `314205` on `all.q@icloud-mnode02.local` with two slots (`failed 0`, `exit_status 0`). The final `.ipynb` was then executed from its first cell through its plotting cell with Jupyter/`42r` as job `314208`; `qacct` reported `failed 0`, `exit_status 0`, wall time 91 s and max VMEM 9.595 GB. The tracked PDF/PNG and summary CSV under `figures/` are explicit publication-code deliverables; cell-level CSV output remains untracked because it is regenerable.

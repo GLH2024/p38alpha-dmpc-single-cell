@@ -1,8 +1,17 @@
-# Server input audit
+# Data access and input audit
 
-Read-only check performed on `172.18.5.221` on 2026-08-11.
+## GEO accession
 
-## Present
+- Accession: [GSE341129](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE341129)
+- Status checked: 2026-08-16
+- Current status: private; scheduled public release 2030-07-23
+- Reviewer access: requires the GEO secure token supplied separately by the authors
+
+Do not commit reviewer tokens, credentials or controlled links.
+
+## Retained server intermediates
+
+The following inputs were verified under `/data3/Group8/gonglihao/项目/p38`:
 
 - `20250509-doublet-p38/1QC/2stsub.rds`
 - `20250526p38-draw/sub/2stsub.rds`
@@ -14,12 +23,4 @@ Read-only check performed on `172.18.5.221` on 2026-08-11.
 - `20260103-p38/final_results/adata_wt_dynamo_quantified.h5ad`
 - `20260103-p38/final_results/adata_ko_dynamo_quantified.h5ad`
 
-All paths above are relative to `/data3/Group8/gonglihao/项目/p38`.
-
-## Not found
-
-- `WT_cellranger_output.loom`
-- `KO_cellranger_output.loom`
-- The old `/data3/Group8/gonglihao/20250507p38-up/...` Cell Ranger locations referenced by the initial QC notebooks.
-
-Consequently, the publication repository can start from the retained RDS/H5AD intermediates. A complete rerun from raw Cell Ranger matrices through loom alignment requires restoring or relinking those raw inputs and setting the configured roots accordingly.
+The legacy WT/KO loom files and old `/data3/Group8/gonglihao/20250507p38-up/...` Cell Ranger locations were not found in the current audit. Consequently, the checked notebooks can rerun from retained intermediates, but a clean raw-to-figure rerun requires downloading/relinking the GEO files and setting the configured roots. This limitation should be resolved or documented for reviewers before submission.

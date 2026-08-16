@@ -13,3 +13,9 @@ results/*
 __pycache__/
 *.baiduyun.uploading.cfg
 .DS_Store
+
+# Explicit final figure deliverables
+!figures/
+!figures/*.png
+!figures/*.pdf
+!figures/*.csv
