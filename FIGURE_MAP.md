@@ -1,7 +1,5 @@
 # Figure-to-code map
 
-The mapping was checked against the supplied manuscript composite. Notebook cells must be run from top to bottom; cell numbers are intentionally omitted because they are brittle during curation.
-
 | Panel | Notebook(s) | Output / role |
 |---|---|---|
 | Fig. 2A | `06_final_cell_type_annotation.ipynb`, `17_figure2_4_exports.ipynb` | Final annotated UMAP |
@@ -20,4 +18,4 @@ The mapping was checked against the supplied manuscript composite. Notebook cell
 | Fig. S3D | `15_fig_s3d_pseudotime.ipynb` | Cell-type pseudotime ridges |
 | Fig. S3E | `09_dynamo_quantification.ipynb` → `16_fig_s3e_dynamics_metrics.ipynb` | Six dynamical metrics |
 
-Some manuscript panels were assembled from multiple exported plots. Embedded outputs are visual references and do not replace rerunning the upstream notebooks.
+Some manuscript panels were assembled from multiple exported plots. 
