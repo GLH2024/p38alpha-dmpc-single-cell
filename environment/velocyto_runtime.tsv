@@ -1,8 +1,0 @@
-package	version
-python	3.12.10
-velocyto	0.17.17
-numpy	1.26.4
-pandas	2.2.3
-scipy	1.15.2
-h5py	3.13.0
-loompy	2.0.16
