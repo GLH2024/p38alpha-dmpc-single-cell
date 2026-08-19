@@ -24,7 +24,7 @@ Run notebooks from the repository root in filename order.
 | `10` | Plot Fig. 2D from notebook 09 outputs | `dynamo_env` |
 | `11`-`18` | Differential expression, enrichment and manuscript panels | kernel recorded per notebook |
 
-Panel provenance is listed in [`FIGURE_MAP.md`](FIGURE_MAP.md). Figure 4C is a western blot and has no single-cell code.
+Panel provenance is listed in [`FIGURE_MAP.md`](FIGURE_MAP.md). 
 
 ## Paths and execution
 
