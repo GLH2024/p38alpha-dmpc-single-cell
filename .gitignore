@@ -4,7 +4,7 @@
 *.mtx
 *.xlsx
 *.csv
-!config/cell_types.csv
+!notebooks/cell_types.csv
 !figures/*.csv
 .ipynb_checkpoints/
 __pycache__/
