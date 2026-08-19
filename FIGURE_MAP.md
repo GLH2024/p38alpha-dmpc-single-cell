@@ -4,7 +4,7 @@
 |---|---|---|
 | Fig. 2A | `06_final_cell_type_annotation.ipynb`, `17_figure2_4_exports.ipynb` | Final annotated UMAP |
 | Fig. 2B | `06_final_cell_type_annotation.ipynb`, `17_figure2_4_exports.ipynb` | Marker dot plot |
-| Fig. 2C | `06_final_cell_type_annotation.ipynb`, `17_figure2_4_exports.ipynb` | WT versus p38α-dMPC cell proportions |
+| Fig. 2C | `06_final_cell_type_annotation.ipynb`, `17_figure2_4_exports.ipynb` | WT versus p38α<sup>ΔHPC</sup> cell proportions |
 | Fig. 2D | `08a_velocity_export_from_seurat.ipynb` → `08b_velocity_build_anndata.ipynb` → `09_dynamo_quantification.ipynb` → `10_rna_velocity_fig2d.ipynb` | Velocity vectors and developmental trajectories |
 | Fig. 4A | `06_final_cell_type_annotation.ipynb`, `17_figure2_4_exports.ipynb` | Faceted differential-expression plot |
 | Fig. 4B | `18_fig4b_nedd4_pseudotime.ipynb` | Monocle3 pseudotime–Nedd4 GAM plot |

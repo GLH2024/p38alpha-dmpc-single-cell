@@ -1,6 +1,6 @@
-# p38α-dMPC single-cell analysis
+# p38α<sup>ΔHPC</sup> single-cell analysis
 
-Publication-oriented Jupyter notebooks for the WT versus p38α-dMPC single-cell RNA-seq study (GEO: [GSE341129](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE341129)). This repository contains only the code required for Figures 2, 4, 6 and Figure S3 in the supplied manuscript composite.
+Publication-oriented Jupyter notebooks for the WT versus p38α<sup>ΔHPC</sup> single-cell RNA-seq study (GEO: [GSE341129](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE341129)). This repository contains only the code required for Figures 2, 4, 6 and Figure S3 in the supplied manuscript composite.
 
 ## Workflow
 
