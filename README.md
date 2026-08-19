@@ -4,7 +4,7 @@ Publication-oriented Jupyter notebooks for the WT versus p38α-dMPC single-cell 
 
 ## Workflow
 
-Run notebooks from the repository root in filename order. The velocity branch is explicit and no longer begins from an unexplained H5AD:
+Run notebooks from the repository root in filename order.
 
 ```text
 01-07 annotation
@@ -23,47 +23,3 @@ Run notebooks from the repository root in filename order. The velocity branch is
 | `09`-`10` | Fit Dynamo vector fields and plot Fig. 2D | `dynamo_env` | Python 3.8.20; Dynamo 1.4.1; Scanpy 1.9.6; AnnData 0.9.2 |
 | `11`-`15`, `17`-`18` | Differential expression, enrichment and R-based manuscript panels | R `42` (`42r`) | R 4.4.2; monocle3 1.3.1; clusterProfiler 4.14.6; GseaVis 0.1.1 |
 | `16` | Fig. 6F / Fig. S3E dynamic metrics | `dynamo_env` | Python 3.8.20; Dynamo 1.4.1; Scanpy 1.9.6; AnnData 0.9.2 |
-
-Panel provenance is listed in [`FIGURE_MAP.md`](FIGURE_MAP.md). Figure 4C is a western blot and has no single-cell code.
-
-
-## Repository layout
-
-```text
-README.md / FIGURE_MAP.md
-└── notebooks/
-    ├── 01-18 numbered analysis notebooks
-    ├── paths.R / paths.py / cell_types.csv
-    └── doublet_removal.R / validate_notebooks.py
-```
-
-## Paths and execution
-
-```bash
-export P38_PROJECT_ROOT=/data3/Group8/gonglihao/项目/p38
-export P38_UPSTREAM_ROOT=/data3/Group8/gonglihao/20250507p38-up
-export P38_OUTPUT_ROOT=/data3/Group8/gonglihao/codex/p38_publication_outputs
-export P38_WORKERS=8
-```
-
-`P38_PROJECT_ROOT` contains retained RDS/H5AD intermediates. `P38_UPSTREAM_ROOT` contains Cell Ranger matrices and velocyto loom files and may be replaced with the corresponding GEO download location. On SGE, `NSLOTS` overrides `P38_WORKERS`. Start Jupyter from this repository root and use **Restart Kernel and Run All**.
-
-## Data availability
-
-Raw and processed data were deposited as [GSE341129](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE341129). As checked on 2026-08-16, the record was private and scheduled for release on 2030-07-23; reviewers require the GEO secure token supplied separately by the authors. Tokens and credentials must not be committed.
-
-The canonical velocity input `20250526p38-draw/sub/2stsub.rds` and downstream H5AD are present on the analysis server. The two legacy loom paths referenced by notebook 08b are currently absent, so a clean raw-to-H5AD rerun requires restoring those GEO/velocyto files or regenerating them with `velocyto_env`. Large data files are intentionally excluded from Git.
-
-## Validation
-
-The key runtime and package versions required for review are summarized in the workflow table above. Notebooks importing Dynamo use `dynamo_env`; notebook 08b uses `310`; R notebooks use the `42r` kernel from environment `42`.
-
-```bash
-python notebooks/validate_notebooks.py
-```
-
-The validator checks notebook JSON, cell IDs, Python syntax and embedded images. The reconstructed Fig. 4B notebook was executed under R `42` as SGE job `314208` (`failed 0`, `exit_status 0`). Velocity dependency smoke test `314272` used `dynamo_env 1.4.1` to verify the 18,113-cell input, the 8,176-cell trajectory subset (WT 4,694; p38α-dMPC 3,482), and the quantified H5AD outputs required by notebooks 10 and 16 (`failed 0`, `exit_status 0`). Embedded images are retained for visual comparison, but a clean raw-to-figure rerun remains necessary before claiming full independent reproducibility.
-
-## Provenance
-
-Curated cells retain `metadata.provenance` where source notebooks/cells were known. The server source directory and the original local code were read only. The repository structure follows the concise numbered-notebook approach of [irae_reproduction](https://github.com/chansigit/irae_reproduction).
