@@ -10,7 +10,6 @@ The mapping was checked against the supplied manuscript composite. Notebook cell
 | Fig. 2D | `08a_velocity_export_from_seurat.ipynb` → `08b_velocity_build_anndata.ipynb` → `09_dynamo_quantification.ipynb` → `10_rna_velocity_fig2d.ipynb` | Velocity vectors and developmental trajectories |
 | Fig. 4A | `06_final_cell_type_annotation.ipynb`, `17_figure2_4_exports.ipynb` | Faceted differential-expression plot |
 | Fig. 4B | `18_fig4b_nedd4_pseudotime.ipynb` | Monocle3 pseudotime–Nedd4 GAM plot |
-| Fig. 4C | — | Western blot; experimental panel, no single-cell code |
 | Fig. 4D | `06_final_cell_type_annotation.ipynb`, `17_figure2_4_exports.ipynb` | Nedd4 and Csf1r feature plots |
 | Fig. 6D | `12_fig6d_go_bubble.ipynb` | GO enrichment bubble plot |
 | Fig. 6E | `13_fig6e_gsea.ipynb` | GSEA running-score plot |
