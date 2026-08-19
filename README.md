@@ -4,7 +4,7 @@ Publication-oriented Jupyter notebooks for the WT versus p38α-dMPC single-cell 
 
 ## Workflow
 
-Run notebooks from the repository root in filename order. The velocity branch is explicit and no longer begins from an unexplained H5AD:
+Run notebooks from the repository root in filename order.
 
 ```text
 01-07 annotation
