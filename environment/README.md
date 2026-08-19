@@ -14,3 +14,11 @@ Versions below were inspected on `172.18.5.221` on 2026-08-16. Use the absolute 
 Important: although `dynamo-release 1.3.2` metadata exists in `310`, importing it currently fails with Matplotlib 3.10 (`register_cmap` compatibility). The notebooks importing `dynamo` therefore point to `dynamo_env`, not `310`.
 
 `ggplot2` resolves to runtime version 4.0.1 in R `42` because the user library overrides the conda package record. The version manifests record runtime versions, which are the versions that actually execute the notebooks.
+
+
+## Notebook assignment
+
+- `08a_velocity_export_from_seurat.ipynb`: `42r`
+- `08b_velocity_build_anndata.ipynb`: `310`
+- `09_dynamo_quantification.ipynb`, `10_rna_velocity_fig2d.ipynb`, and `16_fig_s3e_dynamics_metrics.ipynb`: `dynamo`
+- Cell Ranger and velocyto generation remain upstream command-line steps in `cellranger_env` and `velocyto_env`.

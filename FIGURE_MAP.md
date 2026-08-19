@@ -1,24 +1,24 @@
 # Figure-to-code map
 
-The mapping was checked against the supplied manuscript composite. Cell numbers are 1-based notebook cell positions.
+The mapping was checked against the supplied manuscript composite. Notebook cells must be run from top to bottom; cell numbers are intentionally omitted because they are brittle during curation.
 
-| Panel | Notebook | Cell | Output / role |
-|---|---|---:|---|
-| Fig. 2A | `notebooks/06_final_cell_type_annotation.ipynb` | 3 | Final annotated UMAP |
-| Fig. 2B | `notebooks/06_final_cell_type_annotation.ipynb` | 7 | Marker dot plot |
-| Fig. 2C | `notebooks/06_final_cell_type_annotation.ipynb` | 10 | WT versus p38a-dMPC proportions |
-| Fig. 2D | `notebooks/08_rna_velocity.ipynb` | 2 | Vector-field panels; pseudotime companion in notebook 13 |
-| Fig. 4A | `notebooks/06_final_cell_type_annotation.ipynb` | 13 | Faceted differential-expression plot |
-| Fig. 4B | `notebooks/17_fig4b_nedd4_pseudotime.ipynb` | 6 | Monocle3 pseudotime–*Nedd4* GAM plot |
-| Fig. 4C | — | — | Western blot; experimental panel, no single-cell code |
-| Fig. 4D | `notebooks/06_final_cell_type_annotation.ipynb` | 14 | *Nedd4* and *Csf1r* feature plots |
-| Fig. 6D | `notebooks/10_fig6d_go_bubble.ipynb` | 3 | GO enrichment bubble plot |
-| Fig. 6E | `notebooks/11_fig6e_gsea.ipynb` | 2 | GSEA running-score plot |
-| Fig. 6F | `notebooks/14_fig_s3e_dynamics_metrics.ipynb` | 5 | Differential velocity bar plot |
-| Fig. S3A | `notebooks/07_marker_validation.ipynb` | 4 | Marker feature/violin/dot plots |
-| Fig. S3B | `notebooks/06_final_cell_type_annotation.ipynb` | 7 | Marker-expression heatmap/dot-plot block |
-| Fig. S3C | `notebooks/12_fig_s3c_cell_proportions.ipynb` | 4 | Cell-proportion log2 fold-change |
-| Fig. S3D | `notebooks/13_fig_s3d_pseudotime.ipynb` | 9 | Cell-type pseudotime ridges |
-| Fig. S3E | `notebooks/14_fig_s3e_dynamics_metrics.ipynb` | 3 | Six dynamical metrics |
+| Panel | Notebook(s) | Output / role |
+|---|---|---|
+| Fig. 2A | `06_final_cell_type_annotation.ipynb`, `17_figure2_4_exports.ipynb` | Final annotated UMAP |
+| Fig. 2B | `06_final_cell_type_annotation.ipynb`, `17_figure2_4_exports.ipynb` | Marker dot plot |
+| Fig. 2C | `06_final_cell_type_annotation.ipynb`, `17_figure2_4_exports.ipynb` | WT versus p38α-dMPC cell proportions |
+| Fig. 2D | `08a_velocity_export_from_seurat.ipynb` → `08b_velocity_build_anndata.ipynb` → `09_dynamo_quantification.ipynb` → `10_rna_velocity_fig2d.ipynb` | Velocity vectors and developmental trajectories |
+| Fig. 4A | `06_final_cell_type_annotation.ipynb`, `17_figure2_4_exports.ipynb` | Faceted differential-expression plot |
+| Fig. 4B | `18_fig4b_nedd4_pseudotime.ipynb` | Monocle3 pseudotime–Nedd4 GAM plot |
+| Fig. 4C | — | Western blot; experimental panel, no single-cell code |
+| Fig. 4D | `06_final_cell_type_annotation.ipynb`, `17_figure2_4_exports.ipynb` | Nedd4 and Csf1r feature plots |
+| Fig. 6D | `12_fig6d_go_bubble.ipynb` | GO enrichment bubble plot |
+| Fig. 6E | `13_fig6e_gsea.ipynb` | GSEA running-score plot |
+| Fig. 6F | `09_dynamo_quantification.ipynb` → `16_fig_s3e_dynamics_metrics.ipynb` | Differential velocity bar plot |
+| Fig. S3A | `07_marker_validation.ipynb` | Marker feature/violin/dot plots |
+| Fig. S3B | `06_final_cell_type_annotation.ipynb` | Marker-expression heatmap/dot plot |
+| Fig. S3C | `14_fig_s3c_cell_proportions.ipynb` | Cell-proportion log2 fold-change |
+| Fig. S3D | `15_fig_s3d_pseudotime.ipynb` | Cell-type pseudotime ridges |
+| Fig. S3E | `09_dynamo_quantification.ipynb` → `16_fig_s3e_dynamics_metrics.ipynb` | Six dynamical metrics |
 
-`notebooks/16_figure2_4_exports.ipynb` contains the later publication export code for Figure 2/4 panels. `notebooks/18_full_dynamo_quantification.ipynb` generates the Dynamo quantities consumed by velocity summaries. Some manuscript panels were assembled from multiple exported plots; embedded notebook images are visual references, not substitutes for rerunning the analysis.
+Some manuscript panels were assembled from multiple exported plots. Embedded outputs are visual references and do not replace rerunning the upstream notebooks.
